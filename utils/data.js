@@ -192,7 +192,7 @@ const fetchFeaturedLists = async () => {
   return lists || [];
 };
 
-const deleteList = async (taskId) => {
+const deleteTask = async (taskId) => {
   const { data, error } = await supabase
   .from("Tasks")
   .delete()
@@ -219,5 +219,5 @@ export {
   editTask,
   fetchFeaturedLists,
   updateTaskOrder,
-  deleteList,
+  deleteTask,
 };
