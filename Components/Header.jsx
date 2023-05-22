@@ -5,6 +5,7 @@ import { getCurrentUser, logout } from "../utils/data";
 import { useState, useEffect } from "react";
 import Logo from "../images/tasks.png";
 import Image from "next/image";
+import "../app/globals.css";
 
 const Header = () => {
   const router = useRouter();
@@ -13,7 +14,7 @@ const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLogout = async () => {
-    await logout(); // Call the logout function
+    await logout();
     setUser(null); // Update the user state to null after logout
     setIsLoggedIn(false);
   };
