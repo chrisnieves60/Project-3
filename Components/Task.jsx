@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { updateTaskStatus } from "@/utils/data";
 import { editTask } from "@/utils/data";
+import { deleteList } from "@/utils/data";
 
 const Task = ({ task, isOwner, handleMoveUp, handleMoveDown }) => {
   const [isEditing, setIsEditing] = useState(false);
@@ -35,6 +36,15 @@ const Task = ({ task, isOwner, handleMoveUp, handleMoveDown }) => {
     setNewTaskName(task.task_name);
     setIsEditing(false);
   };
+
+  const handleDeleteSubmit = (e) => {
+    e.preventDefault();
+
+    if (!isOwner) return;
+
+    deleteTask(task.task_id, newTaskName);
+    setIsEditing(false);
+  }
 
   return (
     <li className="flex items-center space-x-2">
