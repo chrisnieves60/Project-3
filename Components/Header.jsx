@@ -40,7 +40,7 @@ const Header = () => {
   }, []);
 
   return (
-    <nav className="flex items-center justify-between p-6 bg-blue-950">
+    <nav className="flex items-center justify-between p-6 bg-blue-950 sticky top-0">
       <div className="text-white">
         <Link href="/">
           <Image src={Logo} width="35" alt="Logo" className="h-8" />

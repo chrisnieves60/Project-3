@@ -69,7 +69,7 @@ const List = ({ userId, listId, isOwner }) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex flex-col items-center justify-center min-h-screen -mt-[50px]">
       {!list ? (
         <div className="text-xl font-semibold text-gray-700">Loading...</div>
       ) : (
@@ -100,7 +100,7 @@ const List = ({ userId, listId, isOwner }) => {
             />
             <button
               type="submit"
-              className="mt-2 px-6 py-2 text-white bg-blue-950 rounded hover:bg-blue-800"
+              className="mt-2 px-6 py-2 text-white bg-blue-950 rounded hover:bg-blue-1000"
             >
               Submit
             </button>
@@ -108,7 +108,7 @@ const List = ({ userId, listId, isOwner }) => {
         ) : (
           <button
             onClick={() => setIsAdding(true)}
-            className="mt-4 px-6 py-2 text-white bg-blue-950 rounded hover:bg-blue-800"
+            className="mt-4 px-6 py-2 text-white bg-blue-950 rounded hover:bg-blue-1000"
           >
             Add New Task
           </button>
