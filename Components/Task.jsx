@@ -92,8 +92,8 @@ const Task = ({ task, isOwner, handleMoveUp, handleMoveDown }) => {
           </span>
           {isOwner && (
             <>
-              <button onClick={() => handleMoveUp(task)}>Move Up</button>
-              <button onClick={() => handleMoveDown(task)}>Move Down</button>
+              <button onClick={() => handleMoveUp(task)}>↑</button>
+              <button onClick={() => handleMoveDown(task)}>↓</button>
               <button
                 onClick={handleEditClick}
                 className="py-1 px-2 bg-gray-200 text-gray-700 text-xs rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75"
