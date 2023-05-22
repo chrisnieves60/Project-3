@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { updateTaskStatus } from "@/utils/data";
 import { editTask } from "@/utils/data";
-import { deleteList } from "@/utils/data";
+import { deleteTask } from "@/utils/data";
 
 const Task = ({ task, isOwner, handleMoveUp, handleMoveDown }) => {
   const [isEditing, setIsEditing] = useState(false);
@@ -99,6 +99,12 @@ const Task = ({ task, isOwner, handleMoveUp, handleMoveDown }) => {
                 className="py-1 px-2 bg-gray-200 text-gray-700 text-xs rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75"
               >
                 Edit
+              </button>
+              <button
+                onClick={handleDeleteSubmit}
+                className="py-1 px-2 bg-gray-200 text-gray-700 text-xs rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75"
+              >
+                Delete
               </button>
             </>
           )}
