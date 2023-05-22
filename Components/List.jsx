@@ -69,7 +69,7 @@ const List = ({ userId, listId, isOwner }) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 py-2">
+    <div className="flex flex-col items-center justify-center min-h-screen py-2">
       {!list ? (
         <div className="text-xl font-semibold text-gray-700">Loading...</div>
       ) : (
