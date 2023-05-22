@@ -57,11 +57,11 @@ const Task = ({ task, isOwner, handleMoveUp, handleMoveDown }) => {
             type="text"
             value={newTaskName}
             onChange={handleNameChange}
-            className="border-2 border-gray-300 p-2 rounded focus:border-blue-500 outline-none"
+            className="border-2 border-gray-300 p-2 rounded focus:border-blue-950 outline-none"
           />
           <button
             type="submit"
-            className="py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+            className="py-2 px-4 bg-blue-950 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
           >
             Save
           </button>
@@ -92,8 +92,8 @@ const Task = ({ task, isOwner, handleMoveUp, handleMoveDown }) => {
           </span>
           {isOwner && (
             <>
-              <button onClick={() => handleMoveUp(task)}>Move Up</button>
-              <button onClick={() => handleMoveDown(task)}>Move Down</button>
+              <button onClick={() => handleMoveUp(task)}>↑</button>
+              <button onClick={() => handleMoveDown(task)}>↓</button>
               <button
                 onClick={handleEditClick}
                 className="py-1 px-2 bg-gray-200 text-gray-700 text-xs rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75"

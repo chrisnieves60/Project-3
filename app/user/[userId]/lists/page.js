@@ -12,7 +12,7 @@ const UserListsPage = () => {
       <UserLists userId={userId} />
       <style jsx>{`
         div {
-          color: green;
+          color: black;
         }
       `}</style>
     </div>
