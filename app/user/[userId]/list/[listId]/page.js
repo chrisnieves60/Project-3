@@ -21,7 +21,6 @@ const Page = () => {
       }
 
       if (!user.data) {
-        setUser(null);
         return;
       }
       if (userId == user.data.id) {

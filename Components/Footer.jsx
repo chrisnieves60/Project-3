@@ -6,15 +6,15 @@ const Footer = () => {
       <div className="container mx-auto text-center text-white">
         <p>&copy; {new Date().getFullYear()} - Todo App</p>
         <div className="mt-4 space-x-4">
-          <Link href="/terms">
+          <p>
             <p className="text-white hover:text-blue-300">Terms & Conditions</p>
-          </Link>
-          <Link href="/privacy">
+          </p>
+          <p>
             <p className="text-white hover:text-blue-300">Privacy Policy</p>
-          </Link>
-          <Link href="/about">
+          </p>
+          <p>
             <p className="text-white hover:text-blue-300">About Us</p>
-          </Link>
+          </p>
         </div>
       </div>
     </footer>
