@@ -51,7 +51,7 @@ const UserLists = ({ userId }) => {
         )}
       </div>
       {showAlert && (
-        <p className="text-center mt-4 text-green-500">List created!</p>
+        <p className="text-center mt-4 text-blue-950">List created!</p>
       )}
       {showInput ? (
         <div className="mt-6">
@@ -60,11 +60,11 @@ const UserLists = ({ userId }) => {
             value={newListName}
             onChange={handleNewListNameChange}
             placeholder="New list name"
-            className="w-full p-2 border rounded-lg shadow-sm focus:outline-none focus:border-blue-500 transition-colors duration-150 ease-in-out"
+            className="w-full p-2 border rounded-lg shadow-sm focus:outline-none focus:border-blue-950 transition-colors duration-150 ease-in-out"
           />
           <button
             onClick={handleCreateList}
-            className="w-full mt-2 p-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors duration-150 ease-in-out"
+            className="w-full mt-2 p-2 text-white bg-blue-950 rounded-lg hover:bg-blue-800 transition-colors duration-150 ease-in-out"
           >
             Create list
           </button>
@@ -72,7 +72,7 @@ const UserLists = ({ userId }) => {
       ) : (
         <button
           onClick={() => setShowInput(true)}
-          className="w-full mt-2 p-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors duration-150 ease-in-out"
+          className="w-full mt-2 p-2 text-white bg-blue-950 rounded-lg hover:bg-blue-800 transition-colors duration-150 ease-in-out"
         >
           New List
         </button>

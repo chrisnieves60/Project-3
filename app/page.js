@@ -5,9 +5,9 @@ import { fetchFeaturedLists } from "@/utils/data";
 
 export default function HomePage() {
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 ">
       <h1 className="text-4xl font-bold text-center mt-6 text-black">
-        Welcome to Our Task Manager
+        Welcome to Task Manager
       </h1>
       <FeaturedLists />
     </div>
@@ -38,8 +38,8 @@ const FeaturedLists = () => {
               href={`/user/${list.user_id}/list/${list.list_id}`}
               key={list.id}
             >
-              <p className="block p-4 bg-gray-100 rounded-lg w-64 text-center mb-4 hover:bg-gray-200 cursor-pointer">
-                <h3 className="font-semibold mb-2">{list.list_name}</h3>
+              <p className="block p-4 bg-gray-100 rounded-lg w-64 text-center mb-4 border-2 border-blue-950 hover:bg-gray-200 cursor-pointer">
+                <h3 className="font-bold text-lg mb-2">{list.list_name}</h3>
                 <ul className="text-left overflow-hidden text-gray-700">
                   {list.Tasks
                     ? list.Tasks.slice(0, 3).map((task) => (

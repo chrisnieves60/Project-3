@@ -63,7 +63,7 @@ const Login = () => {
           </h2>
 
           {user && (
-            <div className="mt-2 text-sm text-center text-green-600">
+            <div className="mt-2 text-sm text-center text-blue-950">
               <p>Logged in as:</p>
               <p>Email: {user.email}</p>
             </div>
@@ -116,7 +116,7 @@ const Login = () => {
         </form>
 
         {message && (
-          <p className="mt-2 text-center text-sm text-red-600">{message}</p>
+          <p className="mt-2 text-center text-sm text-blue-950">{message}</p>
         )}
       </div>
     </div>

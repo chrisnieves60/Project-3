@@ -40,16 +40,16 @@ const Header = () => {
   }, []);
 
   return (
-    <nav className="flex items-center justify-between p-6 bg-blue-500">
+    <nav className="flex items-center justify-between p-6 bg-blue-950">
       <div className="text-white">
         <Link href="/">
-          <Image src={Logo} width="50" height="55" alt="Logo" className="h-8" />
+          <Image src={Logo} width="35" alt="Logo" className="h-8" />
         </Link>
       </div>
       <div className="flex space-x-4">
         {isLoggedIn ? ( // Conditionally render the user's name if a user is logged in
-          <span className="text-white ">
-            {user.email}{" "}
+          <span className="text-white flex flex-row">
+            <p className="px-3">{user.email}</p>
             <button onClick={handleLogout} className="mr-2">
               Logout
             </button>
